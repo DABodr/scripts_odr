@@ -14,7 +14,7 @@ fi
 # Installation de eti-cmdline
 cd "$DAB_DIR"
 git clone https://github.com/DABodr/eti-stuff.git
-cd eti-stuff/
+cd eti-stuff/eti-cmdline/
 mkdir build
 cd build
 cmake -DRTLSDR=ON  # Pour DABSticks
