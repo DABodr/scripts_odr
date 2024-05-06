@@ -10,6 +10,8 @@ DAB_DIR="$USER_HOME/dab"
 if [ ! -d "$DAB_DIR" ]; then
     mkdir "$DAB_DIR"
 fi
+# Installation des dépendances
+sudo apt-get -y install libfftw3-dev libsndfile1-dev libsamplerate0-dev libpthreadpool-dev librtlsdr-dev libzmq3-dev
 
 # Installation de eti-cmdline
 cd "$DAB_DIR"
