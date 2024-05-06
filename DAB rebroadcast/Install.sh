@@ -17,7 +17,7 @@ git clone https://github.com/DABodr/eti-stuff.git
 cd eti-stuff/eti-cmdline/
 mkdir build
 cd build
-cmake -DRTLSDR=ON  # Pour DABSticks
+cmake .. -DRTLSDR=ON  # Pour DABSticks
 make
 sudo make install
 
