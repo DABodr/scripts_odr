@@ -1,4 +1,4 @@
 serveur distant:
 
 
-socat TCP-LISTEN:18081 TCP-CONNECT:lexoradio.ddns.net:19085
+socat TCP-LISTEN:18081 TCP-CONNECT:address:port
