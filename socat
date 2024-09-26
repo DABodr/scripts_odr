@@ -1,4 +1,7 @@
 serveur distant:
 
-
 socat TCP-LISTEN:18081 TCP-CONNECT:address:port
+
+eti-cmdline:
+
+eti-cmdline-rtlsdr -D 5 -C 9C -Q | socat - TCP-LISTEN:18082,fork
