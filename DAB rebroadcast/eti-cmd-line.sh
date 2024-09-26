@@ -4,7 +4,9 @@
 while true; do
     # Exécutez votre commande spécifique ici.
     eti-cmdline-rtlsdr -D 5 -C 9D -Q | /home/$USER/dab/eti-tools/eti2zmq -v -a -d -o "zmq+tcp://*:18081"
-
+    #ou avec Socat:
+    #eti-cmdline-rtlsdr -D 5 -C 9C -Q | socat - TCP-LISTEN:18082,fork
+    
     # Affiche un message et attend 5 secondes avant de relancer la commande.
     echo "La commande a été interrompue. Relance dans 5 secondes..."
     sleep 5
